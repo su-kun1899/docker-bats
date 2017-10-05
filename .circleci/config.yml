@@ -1,8 +1,0 @@
-version: 2
-jobs:
-  build:
-    docker:
-      - image: sukun1899/bats
-    steps:
-      - checkout
-      - run: bats .
