@@ -3,8 +3,6 @@ jobs:
   build:
     docker:
       - image: sukun1899/bats
-    working_directory: /go/src/github.com/{{ORG_NAME}}/{{REPO_NAME}}
     steps:
       - checkout
-
       - run: bats .
